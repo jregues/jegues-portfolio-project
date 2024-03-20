@@ -1,0 +1,284 @@
+/* Styling for the entire page */
+* {
+    font-family: 'Gill Sans';
+    box-sizing: border-box;
+    background-color: wheat;
+    color: rgb(2, 45, 70);
+}
+
+/* Styling for the header */
+header {
+    flex-direction: row;
+    padding: 25px;
+    background-color: rgb(6, 107, 133);
+    color: wheat;
+}
+
+/* Styling for name in the header */
+#name {
+    background-color: rgb(6, 107, 133);
+    float: left;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    color: wheat;
+    padding-left: 3px;
+}
+
+/* Styling for nav bar */
+nav {
+    background-color: rgb(6, 107, 133);
+    /* display: flex; */
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+nav div h2 {
+    background-color: rgb(6, 107, 133);
+    padding: 10px;
+}
+
+.nav-links {
+    background-color: rgb(6, 107, 133);
+    display: flex;
+    float: right;
+    text-align: center;
+    flex-direction: row;
+    
+}
+
+.nav-links a {
+    background-color: rgb(6, 107, 133);
+    text-decoration: none;
+    color: wheat;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: rgb(2, 45, 70);
+}
+
+.nav-links a:active {
+    color: aliceblue;
+}
+
+/* Styling for about section */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid rgb(6, 107, 133);
+    margin: 15px;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.2;
+}
+
+#about h2 {
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(2, 45, 70);
+}
+
+#about p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#about img {
+    border: 2px solid rgb(2, 45, 70);
+    height: 300px;
+    width: 400px;
+}
+
+/* Styling for project section */
+#projects {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     border: 5px solid rgb(6, 107, 133);
+     margin: 15px;
+     padding: 10px;
+     margin-left: 0;
+     margin-right: 0;
+     line-height: 1.2;
+}
+
+#projects h2 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+#projects h3 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#projects a {
+    display: flex;
+}
+
+#recode h2 {
+    padding-top: 50px;
+}
+
+#proj-3,
+#proj-4 h2 {
+    padding-top: 50px;
+}
+/* Styling for contact section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 5px solid rgb(6, 107, 133);
+    margin: 15px;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.2;
+}
+
+#contact p {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#contact h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 14px 16px;
+    
+    text-decoration: none;
+}
+
+#contact a {
+    
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: rgb(2, 45, 70);
+}
+
+/* img sizing */
+img {
+    overflow: hidden;
+    /* display: flex; */
+    flex-direction: row;
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+/* Style for my prework study guide project */
+#prework {
+    height: 500px;
+    width: 1000px;
+}
+
+#prework:hover {
+    height: 700px;
+    width: 1400px;
+    box-shadow: 15px 15px 10px black;
+}
+
+/* Style for my horiseon semantic code project */
+#horiseon {
+    height: 450px;
+    width: 900px;
+}
+
+#horiseon:hover {
+    height: 600px;
+    width: 1200px;
+    box-shadow: 15px 15px 10px black;
+}
+
+/* Screen rezising for tablets */
+@media screen and (max-width: 992px) {
+    body,
+  nav {
+    display: flex;
+    flex-direction: column;
+    }
+  #prework {
+    height: 400px;
+    width: 800px;
+    }
+    #prework:hover {
+        height: 450px;
+        width: 900px;
+        box-shadow: 15px 15px 10px black;
+    }
+    #horiseon {
+        height: 300px;
+        width: 600px;
+    }
+    
+    #horiseon:hover {
+        height: 350px;
+        width: 700px;
+        box-shadow: 15px 15px 10px black;
+    }
+}
+
+/* Screen resizing for large smartphones */
+@media screen and (max-width: 768px) {
+    body,
+    nav {
+      display: flex;
+      flex-direction: column;
+      }
+    #prework {
+      height: 300px;
+      width: 600px;
+      }
+      #prework:hover {
+          height: 350px;
+          width: 700px;
+          box-shadow: 15px 15px 10px black;
+      }
+      #horiseon {
+          height: 200px;
+          width: 400px;
+      }
+      
+      #horiseon:hover {
+          height: 300px;
+          width: 600px;
+          box-shadow: 15px 15px 10px black;
+      }
+}
+
+/* Screen resizing for small smartphones */
+@media screen and (max-width: 576px) {
+    body,
+    nav {
+      display: flex;
+      flex-direction: column;
+      }
+    #prework {
+      height: 200px;
+      width: 400px;
+      }
+      #prework:hover {
+          height: 250px;
+          width: 500px;
+          box-shadow: 15px 15px 10px black;
+      }
+      #horiseon {
+          height: 150px;
+          width: 300px;
+      }
+      
+      #horiseon:hover {
+          height: 200px;
+          width: 400px;
+          box-shadow: 15px 15px 10px black;
+      }
+}

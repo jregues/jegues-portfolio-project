@@ -13,7 +13,7 @@ html {
 body {
   min-height: 100%;
   line-height: 1;
-  font-family: sans-serif;
+  font-family: 'Gill Sans';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 input, select, option, optgroup, textarea, button,
 pre, code {
   font-size: 100%;
-  font-family: inherit;
+  font-family: 'Gill Sans';
 }
 
 /* Removes default bullet points from lists */
